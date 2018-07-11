@@ -2,7 +2,7 @@
 n = int(input("Input an integer: "))
 ans = 0
 iterStill = abs(n)
-# n^2 = n + n + .. + n
+# n^2 = n + n + .. + n = n(n)
 while (iterStill != 0):
     ans += abs(n)
     iterStill -= 1
