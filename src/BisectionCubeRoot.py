@@ -3,7 +3,7 @@ def BisectionCubeRoot():
     x = float(input("Enter an number: "))
     epsilon = 0.01
     low = 0.0
-    high = max(1.0, abs(x))
+    high = max(0.0, abs(x))
     ans = (low + high) / 2.0
     numGuesses = 0
     while abs(ans ** 3 - abs(x)) >= epsilon:
@@ -15,7 +15,10 @@ def BisectionCubeRoot():
             high = ans
         ans = (low + high) / 2.0
     print("numGuesses=", numGuesses)
-    print(ans, "is the square root of", x)
+    if x < 0:
+        print(-ans, "is the square root of", x)
+    else:
+        print(ans, "is the square root of", x)
 
 if __name__ == "__main__":
     BisectionCubeRoot()
