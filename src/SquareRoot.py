@@ -1,3 +1,4 @@
+# Approximating the square root using exhaustive enumeration
 def SquareRoot():
     x = float(input("Enter an number: "))
     epsilon = 0.01
