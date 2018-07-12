@@ -1,5 +1,5 @@
 def SquareRoot():
-    x = int(input("Enter an integer: "))
+    x = float(input("Enter an number: "))
     epsilon = 0.01
     step = epsilon ** 2
     numGuesses = 0
