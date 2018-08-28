@@ -7,6 +7,6 @@ array1 = [True,  True,  True,  False,
           None,  None,  None,  True];
           
 def count_sheeps(arrayOfSheeps):
-    return arrayOfSheeps.count
+    return arrayOfSheeps.count(True)
 
 print(count_sheeps(array1))
