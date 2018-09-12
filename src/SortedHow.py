@@ -11,5 +11,3 @@ def is_sorted_and_how(arr):
         return "yes, descending"
     else:
         return "no"
-
-print(is_sorted_and_how([1, 2, 3, 9, 8, 7]))
