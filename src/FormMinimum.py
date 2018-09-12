@@ -4,10 +4,9 @@
 # Input >> Output Examples
 # 1- minValue ({1, 3, 1})  ==> return (13)
 # Explanation:
+# (13) is the minimum number could be formed from {1, 3, 1} , Without duplications
 
 def min_value(digits):
     lst = sorted(list(set(digits)))
     return int("".join(map(str, lst)))
     
-
-print(min_value({1,3,1}))
